@@ -1,3 +1,16 @@
 
+[project]
+name = "ner-smart-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn==0.52.4",
+    "pymongo==4.17.0",
+    "python-dotenv==1.2.3",
+    "dnspython==2.8.0",
+    "websockets==17.1",
+]
+
 [tool.vercel]
-entrypoint = "backend.app.main:app"
+entrypoint = "backend/app/main.py"
